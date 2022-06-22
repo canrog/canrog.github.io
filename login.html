@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="login.css" />
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+</head>
+<body class="background">
+ 
+<button class="mobile-menu-toggle" aria-controls="navbar-menu" aria-expanded="false">
+    <span class="sr-only">Menu</span>
+</button>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" id="navbar-logo"><span class="iconify"></span>Options Uncovered</a>
+            <ul id="navbar-menu" data-visible="false" class="navbar-menu">
+                <li class="navbar-item">
+                    <a href="Calls.html" class="navbar-links">Puts/Calls</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="services.html" class="navbar-links">Credit/Debit Spreads</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="Brokerages.html" class="navbar-links">Brokerages</a>
+                <li class="button">
+                    <a href="login.html" class="navbar-links">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="body">
+        <div class="container">
+            <form class="form" id="login">
+                <h1 class="form-title">Login</h1>
+                <div class="form-message, form-message-error">Incorrect username/password combination</div>
+                <div class="form-input-group">
+                    <input type="text" class="form-input" autofocus placeholder="Username or email">
+                    <div class="form-input-error-message"></div>
+                </div>
+                <div class="form-input-group">
+                    <input type="password" class="form-input" autofocus placeholder="Password">
+                    <div class="form-input-error-message"></div>
+                </div>
+                <button class="form-button" type="submit">Continue</button>
+                <!-- 
+                <p class="form-text">
+                    <a href="#" class="form-link">Forgot your password?</a>
+                </p>
+                -->
+                <p class="form-text">
+                    <a href="#" class="form-link" id="linkCreateAccount">Create account</a>
+                </p>
+            </form>
+            <form class="form, form-hidden" id="createAccount">
+                <h1 class="form-title">Create Account</h1>
+                <div class="form-message form-message-error"></div>
+                <div class="form-input-group">
+                    <input type="text" class="form-input" autofocus placeholder="Username">
+                    <div class="form-input-error-message"></div>
+                </div>
+                <div class="form-input-group">
+                    <input type="password" class="form-input" autofocus placeholder="Email Address">
+                    <div class="form-input-error-message"></div>
+                </div>
+                <div class="form-input-group">
+                    <input type="password" class="form-input" autofocus placeholder="Password">
+                    <div class="form-input-error-message"></div>
+                </div>
+                <div class="form-input-group">
+                    <input type="password" class="form-input" autofocus placeholder="Confirm password">
+                    <div class="form-input-error-message"></div>
+                </div>
+                <button class="form-button" type="submit">Continue</button>
+                <p class="form-text">
+                    <a href="#" class="form-link" id="linkLogin">Already have an account? sign in</a>
+                </p>
+            </form>
+        </div>
+        <script src="login.js"></script>
+    </div>
+</body>
+</html>
